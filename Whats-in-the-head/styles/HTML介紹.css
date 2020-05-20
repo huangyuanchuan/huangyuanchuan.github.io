@@ -1,0 +1,17 @@
+h1 {
+    font-size: 51px;
+}
+
+div {
+    min-height: 106px;
+    padding: 12px 24px;
+    border: 1px solid rgba(161, 158, 158, 0.212);
+    background-color: rgba(128, 128, 128, 0.198);
+}
+
+p {
+    background-color: rgba(128, 128, 128, 0.198);
+    line-height: 2;
+    border: 1px solid rgba(161, 158, 158, 0.212);
+    font-size: 60px;
+}
