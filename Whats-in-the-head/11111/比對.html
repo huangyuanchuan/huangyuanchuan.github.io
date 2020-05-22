@@ -1,41 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Other semantics examples</title>
+  </head>
+  <body>
+    <p>We use <abbr title="Hypertext Markup Language">HTML</abbr> to structure our web documents.</p>
 
-<head>
-    <meta charset="utf-8" />
-    <title>Links: Task 1</title>
-    <style>
-        body {
-            background-color: #fff;
-            color: #333;
-            font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
-            padding: 1em;
-            margin: 0;
-        }
-        
-        h1 {
-            font-size: 2rem;
-            margin: 0;
-            color: purple;
-        }
-        
-        p {
-            color: gray;
-            margin: 0.5em 0;
-        }
-        
-        * {
-            box-sizing: border-box;
-        }
-    </style>
-</head>
+    <p>I think <abbr title="Reverend">Rev.</abbr> Green did it in the kitchen with the chainsaw.</p>
 
-<body>
+    <address>
+      <p>Chris Mills, Manchester, The Grim North, UK</p>
+    </address>
+
+    <p>My birthday is on the 25<sup>th</sup> of May 2001.</p>
+
+    <p>Caffeine's chemical formula is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.</p>
+
+    <p>If x<sup>2</sup> is 9, x must equal 3.</p>
+
+    <pre><code>var para = document.querySelector('p');
+
+para.onclick = function() {
+  alert('Owww, stop poking me!');
+}</code></pre>
+
+    <p>You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.</p>
+
+    <p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+
+    <p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+
+    <pre>$ <kbd>ping mozilla.org</kbd>
+<samp>PING mozilla.org (63.245.215.20): 56 data bytes
+64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+
+  </body>
+
+  <!-- 标准简单日期 -->
+<dd><time datetime="2016-01-20">20 January 2016</time></dd>
 
 
-    h1 { font-size: 2rem; margin: 0; color: purple; } li { color: gray; margin: 0.5em 0; } div { height: 600px; }
+<!-- 只包含年份和月份-->
+<dd><time datetime="2016-01">January 2016</time></dd>
+<!-- 只包含月份和日期 -->
+<dd><time datetime="01-20">20 January</time></dd>
+<!-- 只包含时间，小时和分钟数 -->
+<dd><time datetime="19:30">19:30</time></dd>
 
+<!-- 还可包含秒和毫秒 -->
+<dd><time datetime="19:30:01.856">19:30:01.856</time></dd>
 
-</body>
+<!-- 日期和时间 -->
+<dd><time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time></dd>
 
+<!-- 含有时区偏移值的日期时间 -->
+<dd><time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time></dd>
+
+<!-- 调用特定的周 -->
+<dd><time datetime="2016-W04">The fourth week of 2016</time></dd>
+<time datetime="2020-05-21"></time>
 </html>
